@@ -1,4 +1,4 @@
-package com.lyloou.pojo;
+package com.lyloou.role.pojo;
 
 public class Role {
     private Long id;

@@ -1,4 +1,4 @@
-package com.lyloou.pojo;
+package com.lyloou.juice;
 
 public class Source {
     private String fruit;

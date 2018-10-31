@@ -1,7 +1,7 @@
-package com.lyloou.annotation;
+package com.lyloou.role;
 
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
-public class PojoConfig {
+public class ApplicationConfig {
 }

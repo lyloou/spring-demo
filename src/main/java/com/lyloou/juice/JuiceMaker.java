@@ -1,4 +1,4 @@
-package com.lyloou.pojo;
+package com.lyloou.juice;
 
 import org.springframework.beans.factory.BeanNameAware;
 

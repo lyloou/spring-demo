@@ -1,6 +1,6 @@
 package com.lyloou;
 
-import com.lyloou.pojo.JuiceMaker;
+import com.lyloou.juice.JuiceMaker;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

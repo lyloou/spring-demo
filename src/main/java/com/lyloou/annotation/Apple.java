@@ -1,8 +1,15 @@
 package com.lyloou.annotation;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Apple {
+    @Value("1")
     private Long id;
+    @Value("nameApple")
     private String name;
+    @Value("noteApple")
     private String note;
 
     public Long getId() {
