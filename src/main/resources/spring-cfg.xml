@@ -12,4 +12,9 @@
         <property name="source" ref="source"/>
         <property name="beverageShop" value="西贡"/>
     </bean>
+
+    <bean id="role" class="com.lyloou.pojo.Role">
+        <constructor-arg index="0" value="RoleName"/>
+        <constructor-arg index="1" value="Note1"/>
+    </bean>
 </beans>
