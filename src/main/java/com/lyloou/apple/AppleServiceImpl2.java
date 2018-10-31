@@ -5,15 +5,15 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-
-public class AppleServiceImpl implements AppleService {
+@Primary
+public class AppleServiceImpl2 implements AppleService {
     @Autowired
     Apple apple;
 
     @Override
     public void printAppleInfo() {
-        System.out.println("id=" + apple.getId());
-        System.out.println("name=" + apple.getName());
-        System.out.println("note=" + apple.getNote());
+        System.out.println("id2=" + apple.getId());
+        System.out.println("name2=" + apple.getName());
+        System.out.println("note2=" + apple.getNote());
     }
 }
