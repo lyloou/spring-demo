@@ -3,7 +3,7 @@ package com.lyloou.pojo;
 public class Source {
     private String fruit;
     private String sugar;
-    private Integer size;
+    private String size;
 
     public String getFruit() {
         return fruit;
@@ -21,11 +21,11 @@ public class Source {
         this.sugar = sugar;
     }
 
-    public Integer getSize() {
+    public String getSize() {
         return size;
     }
 
-    public void setSize(Integer size) {
+    public void setSize(String size) {
         this.size = size;
     }
 

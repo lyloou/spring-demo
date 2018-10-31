@@ -6,10 +6,10 @@
     <bean id="source" class="com.lyloou.pojo.Source">
         <property name="fruit" value="橙汁"/>
         <property name="sugar" value="少糖"/>
-        <property name="size" value="1"/>
+        <property name="size" value="大杯"/>
     </bean>
-    <bean id="juiceMaker" class="com.lyloou.pojo.JuiceMaker">
+    <bean id="juiceMaker" class="com.lyloou.pojo.JuiceMaker" init-method="init">
         <property name="source" ref="source"/>
-        <property name="beverageShop" value="XiGong"/>
+        <property name="beverageShop" value="西贡"/>
     </bean>
 </beans>

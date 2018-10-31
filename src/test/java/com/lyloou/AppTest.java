@@ -16,5 +16,6 @@ public class AppTest {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-cfg.xml");
         JuiceMaker juiceMaker = context.getBean(JuiceMaker.class);
         System.out.println(juiceMaker);
+        System.out.println(juiceMaker.makeJuice());
     }
 }
