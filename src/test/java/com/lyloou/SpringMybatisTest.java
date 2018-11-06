@@ -1,5 +1,6 @@
 package com.lyloou;
 
+import com.lyloou.role.mapper.RoleMapper;
 import com.lyloou.role.pojo.Role;
 import org.junit.Test;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -7,6 +8,33 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringMybatisTest {
+
+    @Test
+    public void test2() {
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-mybatis.xml");
+        RoleMapper mapper = ctx.getBean(RoleMapper.class);
+        printRole(mapper, 1L);
+
+        Role role = new Role("nameHiHi", "noteHiHi");
+        mapper.insertRole(role);
+        printRole(mapper, role.getId());
+
+        role.setName("nameBiBi2");
+        mapper.updateRole(role);
+        printRole(mapper, role.getId());
+
+        mapper.deleteRole(role.getId());
+        printRole(mapper, role.getId());
+    }
+
+    private void printRole(RoleMapper mapper, long id) {
+        Role role = mapper.getRole(id);
+        System.out.println("=====================");
+        System.out.println(role);
+        System.out.println("=====================");
+    }
+
+
     @Test
     public void test1() {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-mybatis.xml");

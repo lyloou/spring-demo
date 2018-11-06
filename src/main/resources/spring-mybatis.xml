@@ -22,4 +22,9 @@
         <constructor-arg ref="sqlSessionFactory"/>
         <constructor-arg value="BATCH"/>
     </bean>
+
+    <bean id="roleMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+        <property name="mapperInterface" value="com.lyloou.role.mapper.RoleMapper"/>
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
 </beans>
